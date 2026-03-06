@@ -1,0 +1,18 @@
+:root {
+    --color-background: goldenrod;
+}
+body {
+    position: relative;
+}
+body section {
+    /* balance for fixed nav */
+    padding-top: 5rem;
+}
+
+body > header {
+    background-color: var(--color-background);
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
