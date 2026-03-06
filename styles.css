@@ -1,18 +1,119 @@
 :root {
-    --color-background: goldenrod;
+
+    /* Theme Colors picked with Adobe Colors */
+    --color-theme-1: #163840;
+    --color-theme-2: #8BD1D9;
+    --color-theme-3: #CED9B8;
+    --color-theme-4: #7D8C46;
+    --color-theme-5: #8C7158;
+
+    --color-background: var(--color-theme-1);
+    --color-background-alt: var(--color-theme-5);
+
+    --font-heading: "Texturina", serif;
 }
+
+/* google font */
+.texturina-font {
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+p, label, a {
+    color: var(--color-theme-3);
+}
+h1, h2, h3, h4, h5, h6, small {
+    color: var(--color-theme-4);
+}
+
 body {
     position: relative;
+    background-color: var(--color-background);
 }
 body section {
     /* balance for fixed nav */
     padding-top: 5rem;
 }
 
+/* ########################################
+Header & Navigation 
+######################################## */
 body > header {
-    background-color: var(--color-background);
+    background-color: var(--color-background-alt);
     padding: 0;
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 0 1rem 0 var(--color-theme-4);
+}
+
+header a:hover {
+    text-decoration: none;
+    background-color: var(--color-theme-4);
+}
+
+
+
+/* ########################################
+Content 
+######################################## */
+.audiobooks {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 500px) {
+    .audiobooks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .audiobooks {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.audiobooks > li {
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 1px solid;
+    border-color: var(--color-theme-4);
+    border-radius: 0.5rem;
+}
+
+.audiobooks > li > h5 {
+    min-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.audiobooks > li:nth-child(even) {
+    border-color: var(--color-theme-2);
+}
+.audiobooks > li:nth-child(even) h5 {
+    color: var(--color-theme-2);
+}
+.audiobooks > li > .img-wrapper img {
+    border-radius: 0.5rem;
+}
+
+/* ########################################
+Contact 
+######################################## */
+
+#contact form button {
+    background-color: var(--color-theme-4);
 }
