@@ -1,5 +1,5 @@
 # 22_5-HTML-Page
-Simple HTML page for educational purpose
+Simple HTML and CSS page for educational purposes. It features a simple introduction section, an Audiobook section and an inactive Contact Form.
 
 ## Mindestanforderungen:
 ### HTML:
