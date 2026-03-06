@@ -1,6 +1,9 @@
 # 22_5-HTML-Page
 Simple HTML and CSS page for educational purposes. It features a simple introduction section, an Audiobook section and an inactive Contact Form.
 
+<img width="963" height="575" alt="image" src="https://github.com/user-attachments/assets/a269c3ad-6681-4fd0-8755-babb16dd4eeb" />
+
+
 ## Mindestanforderungen:
 ### HTML:
 - [x] Korrektes HTML5-Grundgeruest
