@@ -39,8 +39,8 @@ body {
     position: relative;
     background-color: var(--color-background);
 }
-body section {
-    /* balance for fixed nav */
+main > section {
+    /* balance for fixed/sticky nav overlapping the heading */
     padding-top: 5rem;
 }
 
