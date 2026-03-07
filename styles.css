@@ -10,6 +10,7 @@
     --color-background: var(--color-theme-1);
     --color-background-alt: var(--color-theme-5);
 
+    --color-heading: var(--color-theme-2);
     --font-heading: "Texturina", serif;
 }
 
@@ -32,7 +33,7 @@ p, label, a {
     color: var(--color-theme-3);
 }
 h1, h2, h3, h4, h5, h6, small {
-    color: var(--color-theme-4);
+    color: var(--color-heading);
 }
 
 body {
@@ -42,6 +43,15 @@ body {
 main > section {
     /* balance for fixed/sticky nav overlapping the heading */
     padding-top: 5rem;
+}
+
+hr {
+    border-color: var(--color-theme-4);
+    border-style: double;
+    border-width: 0.5rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }
 
 /* ########################################
